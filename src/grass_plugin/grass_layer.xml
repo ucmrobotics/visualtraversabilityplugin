@@ -1,0 +1,5 @@
+<library path="grass_plugin_core">
+  <class type="nav2_costmap_2d::GrassLayer"   base_class_type="nav2_costmap_2d::Layer">
+    <description></description>
+  </class>
+</library>

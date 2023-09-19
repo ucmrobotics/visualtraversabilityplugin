@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>grass_plugin</name>
+  <version>1.0.0</version>
+  <description>Run-time plugin for Costmap2D grass layer</description>
+  <maintainer email="ettoresani0@gmail.com">Ettore Sani</maintainer>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <depend>nav2_costmap_2d</depend>
+  <depend>pluginlib</depend>
+  <depend>rclcpp</depend>
+
+  <export>
+    <costmap_2d plugin="${prefix}/grass_layer.xml" />
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
